@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medidas fijas y medidas relativas</title>
+</head>
+<body>
+    <p style="letter-spacing: 20px;">----------UNIDADES FIJAS----------</p>
+    <p>Son aquellas que especifican una medida en términos absolutos, sin tener en cuenta el contexto donde se están aplicando.</p>
+    <ul style="background-color: pink;">
+        <li style="font-size: 35px;">px: Píxeles (35px)</li>
+        <li style="font-size: 1in;">in: Pulgadas (1in)</li>
+        <li style="font-size: 25pt;">pt: Puntos (25pt)</li>
+        <li style="font-size: 3cm;">cm: Centímetros (3cm)</li>
+        <li style="font-size: 10mm;">mm: Milímetros(10mm)</li>
+        <li style="font-size: 5pc;">pc: Picas (5pc)</li>
+    </ul>
+    <p style="letter-spacing: 20px;">----------UNIDADES RELATIVAS----------</p>
+    <p>Son relativas a las dimensiones del contenedor donde se han definido. EJ: ESTECONTENEDOR ES DE 500*500</p>
+    <ul style="background-color: lightblue; width: 500px; height: 500px;">
+        <li style="font-size:80%;">%: porcentaje (80%)</li>
+        <li style="font-size:3em ;">em: Altura de la fuente (3em)</li>
+        <li style="font-size:3rem ;">rem: Root-em (3rem)</li>
+        <li style="font-size:3vw;">vw: Viewport width (3vw)</li>
+        <li style="font-size:3vh ;">vh: Viewport Height (3vh)</li>
+        <li style="font-size: 3vmin ;">vmin: Viewport menor, entre altura o anchura (3vmin)</li>
+        <li style="font-size: 3vmax;">vmax: Viewport mayor, entre altura o anchura (3vmax)</li>
+        <li style="font-size: 3ex;">ex: anchura de la fuente para la letra "x" (3ex)</li>
+        <li style="font-size: 3ch;">ch: la anchura del carácter "0" (cero)(3ch)</li>
+    </ul>
+    <p>----------CÓMO USAR UNIDADES RELATIVAS?--------------</p>
+    <ul>
+        <li>si usas <span style="color: blueviolet;">%</span> serán relativas al tamaño del contenedor</li>
+        <li>La unidad de medida <span style="color: red;">em</span> siempre hace referencia al tamaño de letra del elemento.</li>
+        <li>rem Relativa al tamaño de la fuente del elemento raíz (HTML)</li>
+        <li>vw: Viewport Width, relativa al tamaño del viewport, sería el 1% de la anchura del viewport</li>
+        <li>vh: Viewport Height, relativa al tamaño del viewport, sería el 1% de la altura del viewport</li>
+        <li>vmin: Relativa al tamaño del viewport, el valor mínimo entre su altura y altura</li>
+        <li>vmax: Relativa al tamaño del viewport, el valor máximo entre su altura y altura</li>
+        <li>El valor de <span style="color: orangered;">1ex</span> se puede aproximar por <span style="color: red;">0.5 em</span> la mitad del tamaño de letra del elemento</li>
+        <li>ch: Relativa a la fuente, igual que ex pero con la anchura del caracter 0 (cero)</li>
+    </ul>
+</body>
+</html>
